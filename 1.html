@@ -9,13 +9,46 @@
   </head>
   <body>
     <main class="main">
-    <form action="#">
-<section>
-  <input id="firstname" type="text">
-  <input id="lastname" type="text">
-</section>
-    </form>
-  </main>
+      <form id="form" class="form" action="#">
+        <section class="firstName-LastName">
+          <input id="firstname" type="text" placeholder="First Name" />
+          <input
+            id="lastname"
+            type="text"
+            maxlength="20"
+            minlength="2"
+            placeholder="Last Name"
+          />
+        </section>
+        <input
+          class="full"
+          id="email"
+          type="email"
+          placeholder="Email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        />
+        <input
+          class="full"
+          id="subject"
+          type="text"
+          maxlength="200"
+          minlength="20"
+          placeholder="Subject"
+        />
+        <textarea
+          class="full"
+          name="Message"
+          id="Message"
+          cols="30"
+          rows="10"
+          placeholder="Message"
+        ></textarea>
+        <section class="button-box">
+          <input class="btn" id="submit" type="submit" value="submit" />
+          <input class="btn" id="reset" type="reset" value="reset" />
+        </section>
+      </form>
+    </main>
     <script src="1.js"></script>
   </body>
 </html>
